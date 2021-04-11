@@ -21,7 +21,9 @@ if (isset($_GET['editId']) && !empty($_GET['editId'])) {
 ?>
 <html>
 <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"  crossorigin="anonymous">
+    <?php
+    include('../header.php')
+    ?>
 </head>
 <body>
 <div class="container py-5">
@@ -45,8 +47,8 @@ if (isset($_GET['editId']) && !empty($_GET['editId'])) {
         </div>
     </div>
 </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"  crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
-
+<?php
+include('../footer.php')
+?>
 </body>
 </html>
