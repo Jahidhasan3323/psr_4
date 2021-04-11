@@ -1,0 +1,13 @@
+
+{
+    "name": "Task",
+    "description": "psr-4 standard coding task",
+    "require": {
+        "php": "^7.4.3"
+    },
+    "autoload":{
+        "psr-4":{
+            "App\\": "app/"
+        }
+    }
+}
