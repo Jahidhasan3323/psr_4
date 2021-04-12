@@ -25,7 +25,7 @@ class CountryController extends BaseController {
 
     public function dataUpdate(){
 
-        return $this->updateCountry('country',$_POST);
+        return $this->update('country',$_POST,$_POST['id']);
     }
 
     public function dataDelete($id){

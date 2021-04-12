@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5efbab06-9a13-48ba-ad06-38aa3d65d9af" name="Default Changelist" comment="" />
+    <list default="true" id="5efbab06-9a13-48ba-ad06-38aa3d65d9af" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Controller/BaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controller/BaseController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Controller/CityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controller/CityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Controller/CountryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controller/CountryController.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,7 +25,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/psr_4" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -37,7 +43,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -45,7 +51,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -70,7 +76,11 @@
       <workItem from="1618126449777" duration="171000" />
       <workItem from="1618126654066" duration="5783000" />
       <workItem from="1618146962096" duration="14935000" />
-      <workItem from="1618164579594" duration="12673000" />
+      <workItem from="1618164579594" duration="13082000" />
+      <workItem from="1618198320694" duration="495000" />
+      <workItem from="1618202570709" duration="775000" />
+      <workItem from="1618203791886" duration="597000" />
+      <workItem from="1618208179733" duration="1525000" />
     </task>
     <servers />
   </component>
@@ -90,10 +100,14 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="530" y="185" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1600.860@0.0.1600.860" timestamp="1618157294990" />
-    <state x="301" y="75" key="SettingsEditor" timestamp="1618158703693">
+    <state x="580" y="185" key="FileChooserDialogImpl" timestamp="1618197469415">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="301" y="75" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1618158703693" />
+    <state x="580" y="185" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1618197469415" />
+    <state x="301" y="75" key="SettingsEditor" timestamp="1618208256523">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="301" y="75" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1618208256523" />
     <state x="92" y="92" width="1416" height="676" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1618177366681">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -102,10 +116,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="507" y="29" width="585" height="801" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1618175930561" />
-    <state x="456" y="195" key="run.anything.popup" timestamp="1618176577700">
+    <state x="456" y="195" key="run.anything.popup" timestamp="1618208966039">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="456" y="195" key="run.anything.popup/0.0.1600.860@0.0.1600.860" timestamp="1618176577700" />
+    <state x="456" y="195" key="run.anything.popup/0.0.1600.860@0.0.1600.860" timestamp="1618208966039" />
     <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1618175681451">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

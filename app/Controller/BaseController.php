@@ -56,19 +56,21 @@ class BaseController{
         $conn=$this->connection();
         $index=array_keys($data);
         array_pop($index);
+        array_shift($index);
         $value=array_values($data);
-        array_pop($data);
-        $sql="UPDATE $table SET $index=$value where id=$id ";
+        array_shift($value);
+        $queryDta='';
+        $i=0;
+        foreach ($index as $row){
+            $queryDta.=$index[$i]."='".$value[$i]."',";
+            $i++;
+        }
+        $queryDta=substr($queryDta, 0, -1);
+        $sql="UPDATE $table SET $queryDta where id=$id ";
         $result = $conn->query($sql);
 
     }
-    public function updateCountry($table,$data){
-        $conn=$this->connection();
-        $name = $data['name'];
-        $id = $data['id'];
-        $sql="UPDATE $table SET name='$name' where id=$id ";
-        return  $conn->query($sql);
-    }
+    
     public function listJoin($table, $joinTable,$tableColumn,$joinTableColumn,$selectJoinTableData){
         $conn=$this->connection();
         $sql="SELECT $table.*, $joinTable.$selectJoinTableData from $table  LEFT JOIN $joinTable ON $table.$tableColumn = $joinTable.$joinTableColumn";

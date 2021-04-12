@@ -28,13 +28,8 @@ class CityController extends BaseController {
     }
 
     public function dataUpdate(){
-
         $conn=$this->connection();
-        $title=$_POST['title'];
-        $country_id=(int)$_POST['country_id'];
-        $id=(int)$_POST['id'];
-        $sql="UPDATE city SET country_id=$country_id , title='$title' where id=$id";
-        $result = $conn->query($sql);
+        return $this->update('city',$_POST,$_POST['id']);
     }
 
     public function dataDelete($id){
