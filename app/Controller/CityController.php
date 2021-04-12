@@ -15,11 +15,7 @@ class CityController extends BaseController {
     }
 
     public function dataSet(){
-        $conn=$this->connection();
-        $title=$_POST['title'];
-        $country_id=(int)$_POST['country_id'];
-        $sql="INSERT INTO city(title,country_id) VALUES ('$title','$country_id')";
-        $result = $conn->query($sql);
+        return $this->create('city',$_POST);
     }
 
 

@@ -34,8 +34,12 @@ class BaseController{
         $index=implode(',',$index);
         $value=array_values($data);
         array_pop($value);
-        $value=implode(',',$value);
-        $sql="INSERT INTO $table ($index) VALUES ('$value')";
+        $queryDta='';
+        foreach ($value as $row){
+            $queryDta.="'".$row."',";
+        }
+        $queryDta=substr($queryDta,0,-1);
+        $sql="INSERT INTO $table ($index) VALUES ($queryDta)";
         $result = $conn->query($sql);
 
     }
@@ -70,7 +74,7 @@ class BaseController{
         $result = $conn->query($sql);
 
     }
-    
+
     public function listJoin($table, $joinTable,$tableColumn,$joinTableColumn,$selectJoinTableData){
         $conn=$this->connection();
         $sql="SELECT $table.*, $joinTable.$selectJoinTableData from $table  LEFT JOIN $joinTable ON $table.$tableColumn = $joinTable.$joinTableColumn";
