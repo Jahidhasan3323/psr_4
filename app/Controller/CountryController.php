@@ -15,7 +15,16 @@ class CountryController extends BaseController {
 
     public function dataSet(){
 
-        return $this->create('country',$_POST);
+        $query= $this->create('country',$_POST);
+
+        session_start();
+        if ($query == 1) {
+            $_SESSION['success'] = "Data updated successfully";
+            header("Location:index.php");
+        } else {
+            $_SESSION['danger'] = "Operation failed try again!";
+            header("Location:index.php");
+        }
     }
 
 
@@ -25,11 +34,27 @@ class CountryController extends BaseController {
 
     public function dataUpdate(){
 
-        return $this->update('country',$_POST,$_POST['id']);
+        $query=$this->update('country',$_POST,$_POST['id']);
+        session_start();
+        if ($query == 1) {
+            $_SESSION['success'] = "Data updated successfully";
+            header("Location:index.php");
+        } else {
+            $_SESSION['danger'] = "Operation failed try again!";
+            header("Location:index.php");
+        }
     }
 
     public function dataDelete($id){
-        return $this->delete('country',$id);
+        $query= $this->delete('country',$id);
+        session_start();
+        if ($query == 1) {
+            $_SESSION['success'] = "Data updated successfully";
+            header("Location:index.php");
+        } else {
+            $_SESSION['danger'] = "Operation failed try again!";
+            header("Location:index.php");
+        }
     }
 
 

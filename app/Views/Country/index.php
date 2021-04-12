@@ -1,7 +1,7 @@
 <?php
 use App\Controller\CountryController;
 require_once realpath("../../../vendor/autoload.php");
-
+session_start();
 $obj = new CountryController();
 
 // Delete data
@@ -21,6 +21,20 @@ if (isset($_GET['deleteId']) && !empty($_GET['deleteId'])) {
 
         <div class="row">
             <div class="col-md-12">
+                <?php if (isset($_SESSION['success'])): ?>
+                    <div class="alert alert-success alert-dismissible">
+                        <button type='button' class='close' data-dismiss='alert'>&times;</button>
+                        <?php echo $_SESSION['success']; ?>
+                    </div>
+                <?php endif; ?>
+                <?php if (isset($_SESSION['danger'])): ?>
+                    <div class="alert alert-danger alert-dismissible">
+                        <button type='button' class='close' data-dismiss='alert'>&times;</button>
+                        <?php echo $_SESSION['danger']; ?>
+                    </div>
+                <?php endif; ?>
+                <?php unset($_SESSION['success']); ?>
+                <?php unset($_SESSION['danger']); ?>
                 <h4 class="float-left">Country List</h4>
                 <a href="create.php" class="btn btn-info float-right mb-1">Create New</a>
                 <table class="table table-bordered">

@@ -40,7 +40,7 @@ class BaseController{
         }
         $queryDta=substr($queryDta,0,-1);
         $sql="INSERT INTO $table ($index) VALUES ($queryDta)";
-        $result = $conn->query($sql);
+        return $conn->query($sql);
 
     }
 
@@ -71,7 +71,7 @@ class BaseController{
         }
         $queryDta=substr($queryDta, 0, -1);
         $sql="UPDATE $table SET $queryDta where id=$id ";
-        $result = $conn->query($sql);
+        return $conn->query($sql);
 
     }
 

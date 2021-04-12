@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5efbab06-9a13-48ba-ad06-38aa3d65d9af" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Views/alert.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Controller/BaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controller/BaseController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Controller/CityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controller/CityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Controller/CountryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controller/CountryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Views/City/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/City/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Views/Country/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/Country/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/city/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/city/edit.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +83,8 @@
       <workItem from="1618198320694" duration="495000" />
       <workItem from="1618202570709" duration="775000" />
       <workItem from="1618203791886" duration="597000" />
-      <workItem from="1618208179733" duration="2032000" />
+      <workItem from="1618208179733" duration="2154000" />
+      <workItem from="1618210532254" duration="2812000" />
     </task>
     <servers />
   </component>

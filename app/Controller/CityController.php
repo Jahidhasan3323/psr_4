@@ -15,7 +15,15 @@ class CityController extends BaseController {
     }
 
     public function dataSet(){
-        return $this->create('city',$_POST);
+        $query= $this->create('city',$_POST);
+        session_start();
+        if ($query == 1) {
+            $_SESSION['success'] = "Data updated successfully";
+            header("Location:index.php");
+        } else {
+            $_SESSION['danger'] = "Operation failed try again!";
+            header("Location:index.php");
+        }
     }
 
 
@@ -25,11 +33,27 @@ class CityController extends BaseController {
 
     public function dataUpdate(){
         $conn=$this->connection();
-        return $this->update('city',$_POST,$_POST['id']);
+        $query= $this->update('city',$_POST,$_POST['id']);
+        session_start();
+        if ($query == 1) {
+            $_SESSION['success'] = "Data updated successfully";
+            header("Location:index.php");
+        } else {
+            $_SESSION['danger'] = "Operation failed try again!";
+            header("Location:index.php");
+        }
     }
 
     public function dataDelete($id){
-        return $this->delete('city',$id);
+        $query= $this->delete('city',$id);
+        session_start();
+        if ($query == 1) {
+            $_SESSION['success'] = "Data updated successfully";
+            header("Location:index.php");
+        } else {
+            $_SESSION['danger'] = "Operation failed try again!";
+            header("Location:index.php");
+        }
     }
 
 

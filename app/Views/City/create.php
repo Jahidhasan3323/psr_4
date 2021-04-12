@@ -34,7 +34,7 @@ $countries=$countryObject->dataGet();
                     </div>
                     <div class="form-group">
 
-                        <label for="country_id">Select author</label>
+                        <label for="country_id">Select Country</label>
                         <select class="form-control" id="country_id" name="country_id">
                             <?php
                                 if($countries->num_rows > 0){
