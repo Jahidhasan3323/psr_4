@@ -1,22 +1,12 @@
 <?php
 use App\Controller\CountryController;
-require_once realpath("../../../vendor/autoload.php");
+require_once realpath("../../vendor/autoload.php");
 
 
 $obj = new CountryController();
-//update Data
 if (isset($_POST['submit'])) {
-    $obj->dataUpdate($_POST);
+    $obj->dataSet($_POST);
     header('location:index.php');
-}
-// Edit data
-if (isset($_GET['editId']) && !empty($_GET['editId'])) {
-    $data = $obj->showData($_GET['editId']);
-    if($data->num_rows >0){
-     $editData=$data->fetch_assoc();
-    }else{
-        header('location:index.php');
-    }
 }
 ?>
 <html>
@@ -30,15 +20,14 @@ if (isset($_GET['editId']) && !empty($_GET['editId'])) {
     <div class="row">
 
         <div class="col-md-12">
-            <h4 class="float-left">Edit Country</h4>
+            <h4 class="float-left">Create Country</h4>
             <a href="index.php" class="btn btn-info float-right mb-1">Cancle</a>
         </div>
         <div class="col-md-12">
-                <form method="POST" action="edit.php" >
-                    <input type="hidden" name="id" class="form-control" id="id" value="<?=$editData['id']?>" >
+                <form method="POST" action="create.php" >
                     <div class="form-group">
                         <label for="Name">Name </label>
-                        <input type="text" name="name" class="form-control" id="Name" value="<?=$editData['name']?>" >
+                        <input type="text" name="name" class="form-control" id="Name" >
                     </div>
 
                     <button type="submit" name="submit" class="btn btn-primary">Submit</button>
@@ -50,5 +39,6 @@ if (isset($_GET['editId']) && !empty($_GET['editId'])) {
 <?php
 include('../footer.php')
 ?>
+
 </body>
 </html>

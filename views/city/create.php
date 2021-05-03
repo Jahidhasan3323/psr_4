@@ -1,7 +1,7 @@
 <?php
 use App\Controller\CityController;
 use App\Controller\CountryController;
-require_once realpath("../../../vendor/autoload.php");
+require_once realpath("../../vendor/autoload.php");
 
 
 $obj = new CityController();

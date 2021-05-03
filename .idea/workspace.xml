@@ -2,14 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5efbab06-9a13-48ba-ad06-38aa3d65d9af" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Views/alert.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Controller/QueryController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/city/create.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/city/edit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/city/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/country/create.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/country/edit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/country/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Controller/BaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controller/BaseController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Controller/CityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controller/CityController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Controller/CountryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controller/CountryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Views/City/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/City/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Views/Country/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Views/Country/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/city/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/city/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Views/City/create.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Views/City/edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Views/City/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Views/Country/create.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Views/Country/edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Views/Country/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,17 +68,19 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\psr_4" />
+      <recent name="C:\xampp\htdocs\psr_4\app\Views\Country" />
+      <recent name="C:\xampp\htdocs\psr_4\app\Views" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\psr_4\app\views" />
       <recent name="C:\xampp\htdocs\psr_4\app\Controller" />
       <recent name="C:\xampp\htdocs\psr_4\app\Views" />
       <recent name="C:\xampp\htdocs\psr_4\app\Views\Country" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\psr_4\app\Views\Country" />
-      <recent name="C:\xampp\htdocs\psr_4\app\Views" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -84,7 +99,10 @@
       <workItem from="1618202570709" duration="775000" />
       <workItem from="1618203791886" duration="597000" />
       <workItem from="1618208179733" duration="2154000" />
-      <workItem from="1618210532254" duration="2812000" />
+      <workItem from="1618210532254" duration="3442000" />
+      <workItem from="1618285423204" duration="50000" />
+      <workItem from="1619927852575" duration="2871000" />
+      <workItem from="1620013334367" duration="887000" />
     </task>
     <servers />
   </component>
@@ -100,10 +118,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="530" y="177" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860@0.0.1600.860" timestamp="1618177101804" />
-    <state x="530" y="185" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1618157294990">
+    <state x="530" y="185" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1619929324933">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="530" y="185" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1600.860@0.0.1600.860" timestamp="1618157294990" />
+    <state x="530" y="185" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1600.860@0.0.1600.860" timestamp="1619929324933" />
     <state x="580" y="185" key="FileChooserDialogImpl" timestamp="1618197469415">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

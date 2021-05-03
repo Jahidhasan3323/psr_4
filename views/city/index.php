@@ -1,8 +1,8 @@
 <?php
-use App\Controller\CountryController;
-require_once realpath("../../../vendor/autoload.php");
+use App\Controller\CityController;
+require_once realpath("../../vendor/autoload.php");
 session_start();
-$obj = new CountryController();
+$obj = new CityController();
 
 // Delete data
 if (isset($_GET['deleteId']) && !empty($_GET['deleteId'])) {
@@ -18,7 +18,6 @@ if (isset($_GET['deleteId']) && !empty($_GET['deleteId'])) {
     </head>
     <body>
     <div class="container py-5">
-
         <div class="row">
             <div class="col-md-12">
                 <?php if (isset($_SESSION['success'])): ?>
@@ -35,13 +34,14 @@ if (isset($_GET['deleteId']) && !empty($_GET['deleteId'])) {
                 <?php endif; ?>
                 <?php unset($_SESSION['success']); ?>
                 <?php unset($_SESSION['danger']); ?>
-                <h4 class="float-left">Country List</h4>
+                <h4 class="float-left">City List</h4>
                 <a href="create.php" class="btn btn-info float-right mb-1">Create New</a>
                 <table class="table table-bordered">
                     <thead>
                         <tr>
                             <th >#</th>
                             <th >Name</th>
+                            <th >Country</th>
                             <th >Status</th>
                             <th >Action</th>
                         </tr>
@@ -55,12 +55,13 @@ if (isset($_GET['deleteId']) && !empty($_GET['deleteId'])) {
                         ?>
                             <tr>
                                 <td><?=$i++?></td>
+                                <td><?=$row['title']?></td>
                                 <td><?=$row['name']?></td>
                                 <td><?=$row['status'] == 1 ? 'Active' : 'Inactive'?></td>
                                 <td>
                                     <a href="edit.php?editId=<?php echo $row['id'] ?>" class="btn btn-success">Edit</a>
                                     <a href="index.php?deleteId=<?php echo $row['id'] ?>" style="color:red"
-                                    onclick="return confirm('Are you sure want to delete this record'); " class="btn btn-danger text-white">Delete</a>
+                                       onclick="return confirm('Are you sure want to delete this record'); " class="btn btn-danger text-white">Delete</a>
                                 </td>
                              </tr>
                         <?php
